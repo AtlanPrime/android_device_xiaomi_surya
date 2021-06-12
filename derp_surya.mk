@@ -12,14 +12,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/surya/device.mk)
 
 # Inherit some common aosp stuff.
-$(call inherit-product, vendor/aosp/common.mk)
-
-EXTENDED_BUILD_TYPE := OFFICIAL
-WITH_GAPPS := true
+$(call inherit-product, vendor/derp/config/common_full_phone.mk)
 TARGET_GAPPS_ARCH := arm64
 IS_PHONE := true
 
-PRODUCT_NAME := aosp_surya
+PRODUCT_NAME := derp_surya
 PRODUCT_DEVICE := surya
 PRODUCT_BRAND := POCO
 PRODUCT_MODEL := POCO X3
